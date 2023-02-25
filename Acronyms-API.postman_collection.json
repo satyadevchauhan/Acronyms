@@ -1,0 +1,1280 @@
+{
+	"info": {
+		"_postman_id": "bc91e04a-5137-47ef-a8c7-b11cf36c88e8",
+		"name": "Acronyms-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1652190"
+	},
+	"item": [
+		{
+			"name": "Acronyms",
+			"item": [
+				{
+					"name": "Create Acronym",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"long\": \"Laugh Out Loud\",\n    \"short\": \"LOL\",\n    \"userId\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Acronym - success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"long\": \"Oh My God\",\n    \"short\": \"OMG\",\n    \"userId\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "131"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:41:57 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n    \"long\": \"Oh My God\",\n    \"short\": \"OMG\",\n    \"user\": {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Acronyms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "133"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:49:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n        \"short\": \"OMG\",\n        \"long\": \"Oh My God\",\n        \"user\": {\n            \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Acronyms First",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/first",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"first"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Acronyms First - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms/first",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms",
+										"first"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "131"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:50:38 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n    \"short\": \"OMG\",\n    \"long\": \"Oh My God\",\n    \"user\": {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Acronyms Sorted",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/sorted",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"sorted"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "133"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:49:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n        \"short\": \"OMG\",\n        \"long\": \"Oh My God\",\n        \"user\": {\n            \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Acronyms Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "133"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:49:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n        \"short\": \"OMG\",\n        \"long\": \"Oh My God\",\n        \"user\": {\n            \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update Acronym",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"long\": \"Oh My Boss\",\n    \"short\": \"OMB\",\n    \"userId\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Acronym - success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"long\": \"Oh My Boss\",\n    \"short\": \"OMB\",\n    \"userId\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms",
+										"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "132"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:57:24 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n    \"short\": \"OMB\",\n    \"long\": \"Oh My Boss\",\n    \"user\": {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Search Acronyms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/search?term=LOL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"search"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "LOL"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms/search?term=LOL",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms",
+										"search"
+									],
+									"query": [
+										{
+											"key": "term",
+											"value": "LOL"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "138"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:21:58 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"A1DD8DD2-DC7E-43BD-9476-019C7A1C389E\",\n        \"short\": \"LOL\",\n        \"long\": \"Laugh Out Loud\",\n        \"user\": {\n            \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete Acronyms",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/928FFBD3-53E6-43CA-9DCB-7EE1CB66CF70",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"928FFBD3-53E6-43CA-9DCB-7EE1CB66CF70"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Link Acronyms with Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC/categories/6D1FC250-F5B3-473A-95C8-5889DB6D0C29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+								"categories",
+								"6D1FC250-F5B3-473A-95C8-5889DB6D0C29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Acronym Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Acronym Categories - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"acronyms",
+										"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "131"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:32:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"name\": \"category1\",\n        \"id\": \"6D1FC250-F5B3-473A-95C8-5889DB6D0C29\"\n    },\n    {\n        \"name\": \"category1\",\n        \"id\": \"6D1FC250-F5B3-473A-95C8-5889DB6D0C29\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete Acronym Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC/categories/6D1FC250-F5B3-473A-95C8-5889DB6D0C29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+								"categories",
+								"6D1FC250-F5B3-473A-95C8-5889DB6D0C29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Acronym User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/acronyms/FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"acronyms",
+								"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/E9508409-9AFD-4E59-8FA1-CACEA54195F3/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"E9508409-9AFD-4E59-8FA1-CACEA54195F3",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "171"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:34:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    },\n    {\n        \"id\": \"D8BF089A-8B15-464E-B1FF-C49E90712CF5\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"user1\",\n    \"username\": \"user1_name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User - success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"user1\",\n    \"username\": \"user1_name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "84"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 07:33:10 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"user1\",\n    \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\",\n    \"username\": \"user1_name\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Users - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "171"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:34:03 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    },\n    {\n        \"id\": \"D8BF089A-8B15-464E-B1FF-C49E90712CF5\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Users Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/E9508409-9AFD-4E59-8FA1-CACEA54195F3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"E9508409-9AFD-4E59-8FA1-CACEA54195F3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Users - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "171"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:34:03 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    },\n    {\n        \"id\": \"D8BF089A-8B15-464E-B1FF-C49E90712CF5\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get User Acronyms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/E9508409-9AFD-4E59-8FA1-CACEA54195F3/acronyms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"E9508409-9AFD-4E59-8FA1-CACEA54195F3",
+								"acronyms"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/E9508409-9AFD-4E59-8FA1-CACEA54195F3/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"E9508409-9AFD-4E59-8FA1-CACEA54195F3",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "171"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:34:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    },\n    {\n        \"id\": \"D8BF089A-8B15-464E-B1FF-C49E90712CF5\",\n        \"name\": \"user1\",\n        \"username\": \"user1_name\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"category1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Category - success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"category1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "64"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:26:50 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"category1\",\n    \"id\": \"6D1FC250-F5B3-473A-95C8-5889DB6D0C29\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Categories - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "66"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:32:46 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"6D1FC250-F5B3-473A-95C8-5889DB6D0C29\",\n        \"name\": \"category1\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Categories Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories/6D1FC250-F5B3-473A-95C8-5889DB6D0C29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"6D1FC250-F5B3-473A-95C8-5889DB6D0C29"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Categories Id - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/categories/6D1FC250-F5B3-473A-95C8-5889DB6D0C29",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories",
+										"6D1FC250-F5B3-473A-95C8-5889DB6D0C29"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "64"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:37:07 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"category1\",\n    \"id\": \"6D1FC250-F5B3-473A-95C8-5889DB6D0C29\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Categories Acronyms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/categories/6D1FC250-F5B3-473A-95C8-5889DB6D0C29/acronyms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"6D1FC250-F5B3-473A-95C8-5889DB6D0C29",
+								"acronyms"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Categories Acronyms - success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/categories/6D1FC250-F5B3-473A-95C8-5889DB6D0C29/acronyms",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories",
+										"6D1FC250-F5B3-473A-95C8-5889DB6D0C29",
+										"acronyms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "267"
+								},
+								{
+									"key": "connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 25 Feb 2023 08:33:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n        \"long\": \"Oh My Boss\",\n        \"short\": \"OMB\",\n        \"user\": {\n            \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n        }\n    },\n    {\n        \"id\": \"FB7BA640-12B9-4C8F-922C-83CBBE9E9BAC\",\n        \"short\": \"OMB\",\n        \"long\": \"Oh My Boss\",\n        \"user\": {\n            \"id\": \"E9508409-9AFD-4E59-8FA1-CACEA54195F3\"\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "acronyms",
+			"value": "test"
+		}
+	]
+}
